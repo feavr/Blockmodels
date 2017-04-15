@@ -959,6 +959,6 @@ local blockedmodels = {
 
 sql.Begin()
 for k, v in pairs(blockedmodels) do
-	sql.Query("INSERT INTO FPP_BLOCKEDMODELS1 (model) VALUES ('" .. tostring(v) .. "')")
+	sql.Query("INSERT INTO FPP_BLOCKEDMODELS1 (model) VALUES ('" .. v .. "')")
 end
 sql.Commit()
